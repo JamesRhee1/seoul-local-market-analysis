@@ -72,10 +72,19 @@ seoul-local-market-analysis/
 프로젝트를 클론(Clone)하고 필요한 라이브러리를 설치합니다.
 ```bash
 # 1. 저장소 복제
-git clone [https://github.com/JamesRhee1/seoul-local-market-analysis.git](https://github.com/JamesRhee1/seoul-local-market-analysis.git)
+git clone https://github.com/JamesRhee1/seoul-local-market-analysis.git
 cd seoul-local-market-analysis
 
-# 2. 필수 패키지 설치
+# 2. 가상환경 생성 및 활성화
+# Windows
+python -m venv venv
+source venv/Scripts/activate
+
+# Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# 3. 필수 패키지 설치
 pip install -r requirements.txt
 ```
 
