@@ -39,7 +39,8 @@
 
 ```bash
 seoul-local-market-analysis/
-├── 📂 data/                  # 수집 및 전처리된 CSV 데이터 (Git 제외 가능)
+├── 📂 data/                  # 수집 및 전처리된 CSV 데이터
+├── 📂 images/                # README에 사용된 대시보드 스크린샷
 ├── 📂 src/
 │   ├── collector.py         # 서울시 API 데이터 수집 모듈
 │   └── preprocessor.py      # 데이터 병합 및 정제 모듈
