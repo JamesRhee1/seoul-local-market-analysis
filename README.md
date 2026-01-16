@@ -14,6 +14,17 @@
 > *현재 대시보드는 서울시 상권 API를 통해 수집된 **약 300,000건의 대규모 데이터**를 기반으로 분석한 결과입니다.*
 
 ---
+## 🎯 Project Motivation: Why Hyperlocal Data?
+
+이 프로젝트는 **당근마켓의 핵심 가치인 '하이퍼로컬(Hyperlocal)' 데이터**를 엔지니어링 관점에서 다루기 위해 시작되었습니다.
+
+지역 생활 커뮤니티 플랫폼에서 **'동네 가게(Local Business)'의 생애주기(개업/폐업)** 를 파악하는 것은 매우 중요한 도메인 지식입니다. 저는 서울시 상권 데이터를 활용하여 다음과 같은 엔지니어링 및 비즈니스 목표를 달성하고자 했습니다.
+
+1.  **로컬 데이터 파이프라인 구축:** 방대한 지역 상권 데이터를 안정적으로 수집·적재하여, **비즈프로필(Biz Profile)** 등 로컬 광고 타겟팅에 활용 가능한 데이터 셋을 구축하는 과정을 시뮬레이션했습니다.
+2.  **데이터 기반의 동네 이해:** 단순한 수집을 넘어, 자치구별/업종별 활성도를 시각화함으로써 **"어떤 동네가 뜨고 있는지"** 를 데이터로 증명하는 대시보드를 구현했습니다.
+3.  **대용량 처리 최적화:** 약 30만 건의 데이터를 로컬 환경에서 효율적으로 처리하기 위해 API 페이지네이션과 메모리 최적화를 고려한 파이프라인을 설계했습니다.
+
+---
 
 ## 🚀 주요 기능 (Key Features)
 
@@ -49,3 +60,36 @@ seoul-local-market-analysis/
 ├── config_template.py       # API 키 설정 예시 파일
 ├── requirements.txt         # 의존성 패키지 목록
 └── README.md                # 프로젝트 문서
+```
+
+---
+
+## 💻 실행 방법 (How to Run)
+
+이 프로젝트는 로컬 환경에서 다음과 같은 순서로 실행할 수 있습니다.
+
+### 1. 환경 설정 (Prerequisites)
+프로젝트를 클론(Clone)하고 필요한 라이브러리를 설치합니다.
+```bash
+# 1. 저장소 복제
+git clone [https://github.com/JamesRhee1/seoul-local-market-analysis.git](https://github.com/JamesRhee1/seoul-local-market-analysis.git)
+cd seoul-local-market-analysis
+
+# 2. 필수 패키지 설치
+pip install -r requirements.txt
+```
+
+### 2. API Key Setup (Optional)
+💡 **Note:** 이 저장소에는 **약 300,000건의 전처리된 데이터(`data/seoul_market_final.csv`)가 이미 포함**되어 있습니다.
+데이터를 새로 수집하지 않고 **대시보드만 실행할 경우, 이 단계는 건너뛰어도 됩니다.**
+
+만약 최신 데이터를 직접 수집(`collector.py`)하려면, 서울 열린데이터 광장 인증키 설정이 필요합니다.
+
+1. `config_template.py` 파일의 이름을 `config.py`로 변경합니다.
+2. [서울 열린데이터 광장](https://data.seoul.go.kr/)에서 발급받은 인증키를 입력합니다.
+
+```python
+# config.py
+
+# 서울 열린데이터 광장 인증키 입력
+SEOUL_API_KEY = "YOUR_ACCESS_KEY_HERE"
