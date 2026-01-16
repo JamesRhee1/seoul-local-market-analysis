@@ -101,5 +101,5 @@ def collect_store_data(limit=20000):
         print("[WARN] 수집된 데이터가 없어 파일을 저장하지 않았습니다.")
 
 if __name__ == "__main__":
-    # GitHub 업로드용: 기본 20,000개로 설정 (사용자가 바로 돌려볼 수 있게)
+    # GitHub 업로드용: 기본 20,000개로 설정
     collect_store_data(limit=20000)
