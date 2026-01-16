@@ -1,0 +1,18 @@
+# 1. 데이터 파일 제외
+*.csv
+*.xlsx
+data/*.csv
+
+# 2. 파이썬 캐시 및 가상환경 제외
+__pycache__/
+*.pyc
+venv/
+env/
+
+# 3. 운영체제 및 에디터 설정 파일 제외
+.DS_Store
+.vscode/
+Thumbs.db
+
+# API 키 설정 파일 제외
+config.py
