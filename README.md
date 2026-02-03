@@ -14,6 +14,16 @@
 > *현재 대시보드는 서울시 상권 API를 통해 수집된 **약 300,000건의 대규모 데이터**를 기반으로 분석한 결과입니다.*
 
 ---
+
+## 🚀 Live Demo (웹에서 바로 실행하기)
+별도의 설치 없이, 배포된 웹 애플리케이션을 통해 즉시 대시보드를 체험하실 수 있습니다.
+
+> **Note:** Streamlit Community Cloud 환경 특성상, 초기 접속 시 서버가 깨어나는 데(Waking up) **약 30초~1분 정도 소요**될 수 있습니다. 잠시만 기다려주시면 정상적으로 로드됩니다.
+
+* **🔗 대시보드 링크:** **[👉 Seoul Local Market Analysis App 바로가기](https://jamesrhee1-seoul-local-market-analysis-app-1wzjm0.streamlit.app/)**
+
+---
+
 ## 🎯 Project Motivation: Why Market Dynamics?
 
 이 프로젝트는 **에이블리(Ably)의 핵심 경쟁력인 '빠른 트렌드 캐치'와 '마켓 생태계**를 데이터 엔지니어링 관점에서 해석하기 위해 시작되었습니다.
