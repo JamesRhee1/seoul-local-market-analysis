@@ -11,7 +11,7 @@ import streamlit.components.v1 as components
 # -----------------------------------------------------------------------------
 st.set_page_config(
     page_title="서울시 로컬 상권 분석",
-    page_icon="🥕",
+    page_icon="📑",
     layout="wide"
 )
 
@@ -93,7 +93,7 @@ if selected_districts:
 # -----------------------------------------------------------------------------
 # Main Dashboard Layout
 # -----------------------------------------------------------------------------
-st.title(f"🥕 서울시 '{selected_industry}' 상권 현황")
+st.title(f"🔍 서울시 '{selected_industry}' 상권 현황")
 st.markdown("Source: Seoul Open Data Plaza (Real-time API)")
 
 # Key Performance Indicators (KPI)
